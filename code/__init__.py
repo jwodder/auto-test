@@ -1,4 +1,5 @@
 from . import _version
+from math import sqrt
 
 __version__ = _version.get_versions()["version"]
 
@@ -19,3 +20,5 @@ def fibonacci(n):
     for _ in range(n):
         (a,b) = (b, a+b)
     return a
+
+PHI = (1 + sqrt(5) / 2)
