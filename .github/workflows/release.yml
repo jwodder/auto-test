@@ -42,19 +42,14 @@ jobs:
     steps:
       # By default, actions/checkout will checkout the commit that that was
       # pushed to master and triggered the workflow, but this does not include
-      # the commit & tag created by `auto`.  In order to get that, we need to
-      # look up the tag for the latest release.
-
-      - name: Get tag of latest release
-        id: latest-release
-        run: |
-          echo "::set-output name=tag::$(curl -fsSL https://api.github.com/repos/$GITHUB_REPOSITORY/releases/latest | jq -r .tag_name)"
+      # the commit & tag created by `auto`.  In order to get that, we need
+      # check out the newly-created tag.
 
       - name: Checkout source
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          ref: ${{ steps.latest-release.outputs.tag }}
+          ref: ${{ needs.auto-release.outputs.auto-version }}
 
       - name: Set up Python
         uses: actions/setup-python@v1
