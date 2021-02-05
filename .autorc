@@ -8,7 +8,7 @@
         [
             "exec",
             {
-                "version": "bump2version --new-version $ARG_0 irrelevant"
+                "version": "printf '$ARG_0=%s\\n' \"$ARG_0\" && bump2version $ARG_0"
             }
         ]
     ]
