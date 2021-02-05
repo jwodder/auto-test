@@ -1,3 +1,24 @@
+# 0.2.4 (Fri Feb 05 2021)
+
+#### 🐛 Bug Fix
+
+- Build & upload via exec > afterRelease [#29](https://github.com/jwodder/auto-test/pull/29) ([@jwodder](https://github.com/jwodder))
+
+#### 🏠 Internal
+
+- Also trigger CI on pushes to "next" branch [#22](https://github.com/jwodder/auto-test/pull/22) ([@jwodder](https://github.com/jwodder))
+
+#### 📝 Documentation
+
+- Add a missing prereq [#21](https://github.com/jwodder/auto-test/pull/21) ([@jwodder](https://github.com/jwodder))
+- Add TestPyPI link to README [#20](https://github.com/jwodder/auto-test/pull/20) ([@jwodder](https://github.com/jwodder))
+
+#### Authors: 1
+
+- John T. Wodder II ([@jwodder](https://github.com/jwodder))
+
+---
+
 # 0.2.3 (Mon Oct 26 2020)
 
 #### 🐛 Bug Fix
