@@ -8,6 +8,7 @@
         [
             "exec",
             {
+                "version": "bump2version --new-version $ARG_0 irrelevant",
                 "afterRelease": "python -m build && twine upload dist/*"
             }
         ]
