@@ -8,7 +8,7 @@
         [
             "exec",
             {
-                "afterChangelog": "python -c 'import sys; print(repr(sys.argv[1]))' \"$(echo \"$ARG_0\" | jq -r .bump)\" && bump2version \"$(echo \"$ARG_0\" | jq -r .bump)\"",
+                "afterChangelog": "set -x && bump2version \"$(echo \"$ARG_0\" | jq -r .bump)\"",
                 "afterRelease": "python -m build && twine upload dist/*"
             }
         ]
