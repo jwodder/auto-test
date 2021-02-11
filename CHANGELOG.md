@@ -1,3 +1,15 @@
+# 0.3.0 (Thu Feb 11 2021)
+
+#### 🚀 Enhancement
+
+- Auto + bumpversion, take 4 [#30](https://github.com/jwodder/auto-test/pull/30) ([@jwodder](https://github.com/jwodder))
+
+#### Authors: 1
+
+- John T. Wodder II ([@jwodder](https://github.com/jwodder))
+
+---
+
 # 0.2.4 (Fri Feb 05 2021)
 
 #### 🐛 Bug Fix
