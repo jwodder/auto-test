@@ -1,3 +1,20 @@
+# 0.3.1 (Thu Feb 11 2021)
+
+#### 🐛 Bug Fix
+
+- Use printf instead of <<< [#36](https://github.com/jwodder/auto-test/pull/36) ([@jwodder](https://github.com/jwodder))
+- Avoid echo and its backslash interpretations [#35](https://github.com/jwodder/auto-test/pull/35) ([@jwodder](https://github.com/jwodder))
+- Debug harder [#34](https://github.com/jwodder/auto-test/pull/34) ([@jwodder](https://github.com/jwodder))
+- Try to debug what bump2version is getting [#33](https://github.com/jwodder/auto-test/pull/33) ([@jwodder](https://github.com/jwodder))
+- Use correct exec hook for post-changelog commits [#32](https://github.com/jwodder/auto-test/pull/32) ([@jwodder](https://github.com/jwodder))
+- Try to ensure bump2version's commit makes it into the release [#31](https://github.com/jwodder/auto-test/pull/31) ([@jwodder](https://github.com/jwodder))
+
+#### Authors: 1
+
+- John T. Wodder II ([@jwodder](https://github.com/jwodder))
+
+---
+
 # 0.3.0 (Thu Feb 11 2021)
 
 #### 🚀 Enhancement
