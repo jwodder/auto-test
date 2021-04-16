@@ -1,3 +1,17 @@
+# 0.3.2 (Fri Apr 16 2021)
+
+#### 🐛 Bug Fix
+
+- Don't commit in beforeCommitChangelog step [#39](https://github.com/jwodder/auto-test/pull/39) ([@jwodder](https://github.com/jwodder))
+- Change beforeChangelog to beforeCommitChangelog [#38](https://github.com/jwodder/auto-test/pull/38) ([@jwodder](https://github.com/jwodder))
+- Dump envvars before & after changelog step [#37](https://github.com/jwodder/auto-test/pull/37) ([@jwodder](https://github.com/jwodder))
+
+#### Authors: 1
+
+- John T. Wodder II ([@jwodder](https://github.com/jwodder))
+
+---
+
 # 0.3.1 (Thu Feb 11 2021)
 
 #### 🐛 Bug Fix
