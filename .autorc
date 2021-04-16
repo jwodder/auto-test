@@ -8,7 +8,8 @@
         [
             "exec",
             {
-                "afterChangelog": "bump2version \"$(printf '%s\n' \"$ARG_0\" | jq -r .bump)\"",
+                "beforeChangelog": "mkdir -p env && env | grep -vP '^(GH_TOKEN|TWINE_PASSWORD)' > env/beforeChangelog.env && git add env && git commit -m beforeChangelog",
+                "afterChangelog": "env | grep -vP '^(GH_TOKEN|TWINE_PASSWORD)' > env/afterChangelog.env && git add env && git commit -m afterChangelog && bump2version \"$(printf '%s\n' \"$ARG_0\" | jq -r .bump)\"",
                 "afterRelease": "python -m build && twine upload dist/*"
             }
         ]
