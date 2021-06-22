@@ -13,6 +13,6 @@
         #        "afterRelease": "python -m build && twine upload dist/*"
         #    }
         #]
-        "tools/exec-hooks.js"
+        "./tools/exec-hooks.js"
     ]
 }
