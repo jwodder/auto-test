@@ -1,3 +1,19 @@
+# 0.4.0 (Tue Jun 22 2021)
+
+#### 🚀 Enhancement
+
+- Test replacing exec hook with custom plugin [#40](https://github.com/jwodder/auto-test/pull/40) ([@jwodder](https://github.com/jwodder))
+
+#### 🐛 Bug Fix
+
+- Fix config file comments [#41](https://github.com/jwodder/auto-test/pull/41) ([@jwodder](https://github.com/jwodder))
+
+#### Authors: 1
+
+- John T. Wodder II ([@jwodder](https://github.com/jwodder))
+
+---
+
 # 0.3.2 (Fri Apr 16 2021)
 
 #### 🐛 Bug Fix
