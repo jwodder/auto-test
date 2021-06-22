@@ -1,3 +1,15 @@
+# 0.4.1 (Tue Jun 22 2021)
+
+#### 🐛 Bug Fix
+
+- Try to get custom plugin to load [#42](https://github.com/jwodder/auto-test/pull/42) ([@jwodder](https://github.com/jwodder))
+
+#### Authors: 1
+
+- John T. Wodder II ([@jwodder](https://github.com/jwodder))
+
+---
+
 # 0.4.0 (Tue Jun 22 2021)
 
 #### 🚀 Enhancement
