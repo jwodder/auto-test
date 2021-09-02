@@ -13,12 +13,12 @@ module.exports = class ExecE2BIGWorkaround {
   apply(auto) {
     auto.hooks.beforeCommitChangelog.tapPromise(this.name, async (config) => {
       await execPromise("mkdir", ["-p", "env"]);
-      await execPromise("sh", ["env | grep -vP '^(GH_TOKEN|TWINE_PASSWORD)' > env/beforeCommitChangelog.env"]);
+      await execPromise("sh", ["-c", "env | grep -vP '^(GH_TOKEN|TWINE_PASSWORD)' > env/beforeCommitChangelog.env"]);
       await execPromise("git", ["add", "env"]);
     });
 
     auto.hooks.afterChangelog.tapPromise(this.name, async ({bump}) => {
-      await execPromise("sh", ["env | grep -vP '^(GH_TOKEN|TWINE_PASSWORD)' > env/afterChangelog.env"]);
+      await execPromise("sh", ["-c", "env | grep -vP '^(GH_TOKEN|TWINE_PASSWORD)' > env/afterChangelog.env"]);
       await execPromise("git", ["add", "env"]);
       await execPromise("git", ["commit", "-m", "afterChangelog"]);
       await execPromise("bump2version", [bump]);
