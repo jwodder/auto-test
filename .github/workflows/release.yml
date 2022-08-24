@@ -36,7 +36,7 @@ jobs:
         run: python -m pip install build bump2version twine
 
       - name: Create release
-        run: ~/auto shipit
+        run: ~/auto shipit --no-changelog
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TWINE_REPOSITORY_URL: https://test.pypi.org/legacy/
